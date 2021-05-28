@@ -2,7 +2,7 @@
 
 This is an ongoing list of the local authorities in the Northwestern University catalog and how they are mapped to LCSH.
 
-This list owes a considerable amount to the work done to map LCSH headings at the Chicago History Museum: https://libguides.chicagohistory.org/blog/LCSH-to-Local-Headings-Map as well as the source vocabularies listed below. 
+This list owes a considerable amount to the work done to map LCSH headings at the Chicago History Museum: https://libguides.chicagohistory.org/blog/LCSH-to-Local-Headings-Map and the resources listed below. 
 
 Questions are welcome and can be sent to jamie.carlstone@northwestern.edu
 
@@ -25,4 +25,6 @@ Northwestern uses Alma/Primo.
 | Child slaves | Enslaved children | A4BLiP, CHM |
 | Fugitive slaves | Fugitive enslaved persons | A4BLiP, CHM |
 | Fugitive slaves in literature | Fugitive enslaved persons in literature | A4BLiP, CHM |
+| Legal status of slaves in free states | Legal status of enslaved persons in free states | A4BLiP, CHM |
 | Older slaves | Enslaved elderly | A4BLiP, CHM |
+| Women slaves | Enslaved women | A4BLiP, CHM |

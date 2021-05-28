@@ -3,7 +3,7 @@ rule "Flip from LCSH to NULA"
     (true)
   then
 replaceContents "650.a.Fugitive slaves in literature\\\\." with "Fugitive enslaved persons in literature." if(exists "650.{*,0}.a.Fugitive slaves in literature\\\\.")
-replaceContents "650.a.Fugitive slaves in literature" with "Fugitive enslaved persons in literature." if(exists "650.{*,0}.a.Fugitive slaves in literature")
+replaceContents "650.a.Fugitive slaves in literature" with "Fugitive enslaved persons in literature" if(exists "650.{*,0}.a.Fugitive slaves in literature")
 changeSecondIndicator "650" to "7" if (exists "650.a.Fugitive enslaved persons in literature\\\\.")
 changeSecondIndicator "650" to "7" if (exists "650.a.Fugitive enslaved persons in literature")
 addSubField "650.2.local"  if (exists "650.{-,7}.a.Fugitive enslaved persons in literature\\\\.")

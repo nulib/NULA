@@ -1,0 +1,11 @@
+rule "Flip from LCSH to NULA"
+  when
+    (true)
+  then
+replaceContents "650.x.Legal status of slaves in free states\\\\." with "Legal status of enslaved persons in free states." if(exists "650.{*,0}.x.Legal status of slaves in free states\\\\.")
+replaceContents "650.x.Legal status of slaves in free states" with "Legal status of enslaved persons in free states." if(exists "650.{*,0}.x.Legal status of slaves in free states")
+changeSecondIndicator "650" to "7" if (exists "650.x.Legal status of enslaved persons in free states\\\\.")
+changeSecondIndicator "650" to "7" if (exists "650.x.Legal status of enslaved persons in free states")
+addSubField "650.2.local"  if (exists "650.{-,7}.x.Legal status of enslaved persons in free states\\\\.")
+addSubField "650.2.local"  if (exists "650.{-,7}.x.Legal status of enslaved persons in free states")
+end
