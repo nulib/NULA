@@ -1,0 +1,13 @@
+rule "Flip from LCSH to NULA"
+  when
+    (true)
+  then
+    removeField "650" if (exists "650.{-,0}.a.Older slaves")
+end
+rule "add field 650 with Enslaved elderly"
+  when
+    (not exists "650.{-,7}.a.Enslaved elderly")
+  then
+    addField "650.{-,7}.a.Enslaved elderly"
+    addSubField "650.2.local"  if (exists "650.{-,7}.a.Enslaved elderly")
+end

@@ -1,0 +1,11 @@
+rule "Flip from LCSH to NULA"
+  when
+    (true)
+  then
+replaceContents "650.a.Child slaves\\\\." with "Enslaved children." if(exists "650.{*,0}.a.Child slaves\\\\.")
+replaceContents "650.a.Child slaves" with "Enslaved children." if(exists "650.{*,0}.a.Child slaves")
+changeSecondIndicator "650" to "7" if (exists "650.a.Enslaved children\\\\.")
+changeSecondIndicator "650" to "7" if (exists "650.a.Enslaved children")
+addSubField "650.2.local"  if (exists "650.{-,7}.a.Enslaved children\\\\.")
+addSubField "650.2.local"  if (exists "650.{-,7}.a.Enslaved children")
+end
