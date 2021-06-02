@@ -16,8 +16,9 @@ Northwestern uses Alma/Primo.
 ## List of Resources
 | Resource Name | Abbreviation | Link |
 | ------ | ----- | ------ |
-| Chicago History Museum | CHM | https://libguides.chicagohistory.org/blog/LCSH-to-Local-Headings-Map
 | Archives For Black Lives in Philadelphia | A4BLiP | https://archivesforblacklives.wordpress.com/resources/
+| Chicago History Museum | CHM | https://libguides.chicagohistory.org/blog/LCSH-to-Local-Headings-Map
+
  
 ## List of Headings
 | LCSH | NULA | Source

@@ -1,0 +1,11 @@
+rule "Flip from LCSH to NULA"
+  when
+    (true)
+  then
+replaceContents "650.x.Fugitive slaves\\\\." with "Fugitive enslaved persons." if(exists "650.{*,0}.x.Fugitive slaves\\\\.")
+replaceContents "650.x.Fugitive slaves" with "Fugitive enslaved persons" if(exists "650.{*,0}.x.Fugitive slaves")
+changeSecondIndicator "650" to "7" if (exists "650.x.Fugitive enslaved persons\\\\.")
+changeSecondIndicator "650" to "7" if (exists "650.x.Fugitive enslaved persons")
+addSubField "650.2.local"  if (exists "650.{-,7}.x.Fugitive enslaved persons\\\\.")
+addSubField "650.2.local"  if (exists "650.{-,7}.x.Fugitive enslaved persons")
+end
