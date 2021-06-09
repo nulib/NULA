@@ -11,7 +11,7 @@ Northwestern uses Alma/Primo.
 1. A new authority vocabularly was defined in Alma. Instructions for that process are available here: https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/010Alma_Online_Help_(English)/Metadata_Management/060Working_with_Authority_Records#Adding_a_Local_Authority_Definition 
 2. The original heading from LCSH is copied from the Community Zone into the Institution Zone as NULA
 3. MARC Record is edited according to same standards outlined in the CHM libguide
-4. Normalization rule is run to flip LCSH to NULA. Normalization rules are included in this repository.
+4. Normalization rule is run to flip LCSH to NULA. Normalization rules are included in this repository. There is a normalization rule generator available at https://github.com/jdcar/generate-normalization-rule. 
  
 ## List of Resources
 | Resource Name | Abbreviation | Link |
