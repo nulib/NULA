@@ -25,7 +25,7 @@ Northwestern uses Alma/Primo.
 | ----------- | ----------- | ---------- |
 | Child slaves | Enslaved children | A4BLiP, CHM |
 | Christian slaves | Enslaved Christians | A4BLiP |
-| Communities of fugitive enslaved persons | Fugitive slave communities | A4BLiP |
+| Fugitive slave communities | Communities of fugitive enslaved persons | A4BLiP |
 | Fugitive slaves | Fugitive enslaved persons | A4BLiP, CHM |
 | Fugitive slaves in literature | Fugitive enslaved persons in literature | A4BLiP, CHM |
 | Legal status of slaves in free states | Legal status of enslaved persons in free states | A4BLiP, CHM |
