@@ -1,0 +1,27 @@
+rule "Add LCSH to 450"
+priority 4
+when 
+(true)
+then 
+addSubField "150.w.nne" if (exists "150.{*,*}")
+copyField "150" to "450" if (exists "150.{*,*}")
+addField "667.a.Main entry changed to a local heading in 2021 from OldHeading to NewHeading by Name according to Archives for Black Lives in Philadelphia--Anti-Racist Description Resources guidance and the Chicago History Museum. Original term added as former heading."
+end
+
+rule "remove subfield w from 150"
+priority 3
+when 
+( exists "150" )
+then
+removeSubField "150.w"
+changeSecondIndicator "150" to "7" if (exists "150")
+addSubField "150.2.local" if (exists "150.{*,*}")
+end
+
+rule "Change 008 position 11 to other"
+priority 2
+when
+(existsControl "008.{11,1}.a")
+then
+replaceControlContents "008.{11,1}" with "z"
+end
