@@ -1,11 +1,43 @@
+rule "Add LCSH to local tags"
+priority 4
+when 
+(exists "650.a.Women slaves*")
+then 
+addSubField "650.2.lcsh" if (exists "650.{*,0}.a.Women slaves*")
+copyField "650" to "947" if (exists "650.a.Women slaves*")
+removeSubField "650.2" if (exists "650.{*,0}")
+
+end
+
 rule "Flip from LCSH to NULA"
-  when
-    (true)
-  then
+priority 3
+when
+(true)
+then
 replaceContents "650.a.Women slaves\\\\." with "Enslaved women." if(exists "650.{*,0}.a.Women slaves\\\\.")
 replaceContents "650.a.Women slaves" with "Enslaved women" if(exists "650.{*,0}.a.Women slaves")
 changeSecondIndicator "650" to "7" if (exists "650.a.Enslaved women\\\\.")
 changeSecondIndicator "650" to "7" if (exists "650.a.Enslaved women")
-addSubField "650.2.local"  if (exists "650.{-,7}.a.Enslaved women\\\\.")
-addSubField "650.2.local"  if (exists "650.{-,7}.a.Enslaved women")
+
+addSubField "650.2.local"  if (exists "650.{*,7}.a.Enslaved women\\\\.")
+addSubField "650.2.local"  if (exists "650.{*,7}.a.Enslaved women")
+
+end
+
+rule "Delete FAST headings"
+priority 2
+when 
+(true)
+then
+removeField "650" if (exists "650.{*,7}.a.Women slaves*")
+end
+
+rule "Add note"
+priority 1
+when
+(true)
+then
+addField "949.a.nula" 
+addSubField "949.e.jdc" if (exists "949.a.nula")
+addSubField "949.c.20210804" if (exists "949.a.nula")
 end

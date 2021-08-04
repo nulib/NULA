@@ -30,4 +30,5 @@ Northwestern uses Alma/Primo.
 | Fugitive slaves in literature | Fugitive enslaved persons in literature | A4BLiP, CHM |
 | Legal status of slaves in free states | Legal status of enslaved persons in free states | A4BLiP, CHM |
 | Older slaves | Enslaved elderly | A4BLiP, CHM |
+| Slaves' writings, American | Enslaved persons' writings, American | A4BLiP, CHM |
 | Women slaves | Enslaved women | A4BLiP, CHM |

@@ -1,11 +1,43 @@
+rule "Add LCSH to local tags"
+priority 4
+when 
+(exists "650.a.Fugitive slaves*")
+then 
+addSubField "650.2.lcsh" if (exists "650.{*,0}.a.Fugitive slaves*")
+copyField "650" to "947" if (exists "650.a.Fugitive slaves*")
+removeSubField "650.2" if (exists "650.{*,0}")
+
+end
+
 rule "Flip from LCSH to NULA"
-  when
-    (true)
-  then
+priority 3
+when
+(true)
+then
 replaceContents "650.a.Fugitive slaves\\\\." with "Fugitive enslaved persons." if(exists "650.{*,0}.a.Fugitive slaves\\\\.")
 replaceContents "650.a.Fugitive slaves" with "Fugitive enslaved persons" if(exists "650.{*,0}.a.Fugitive slaves")
 changeSecondIndicator "650" to "7" if (exists "650.a.Fugitive enslaved persons\\\\.")
 changeSecondIndicator "650" to "7" if (exists "650.a.Fugitive enslaved persons")
-addSubField "650.2.local"  if (exists "650.{-,7}.a.Fugitive enslaved persons\\\\.")
-addSubField "650.2.local"  if (exists "650.{-,7}.a.Fugitive enslaved persons")
+
+addSubField "650.2.local"  if (exists "650.{*,7}.a.Fugitive enslaved persons\\\\.")
+addSubField "650.2.local"  if (exists "650.{*,7}.a.Fugitive enslaved persons")
+
+end
+
+rule "Delete FAST headings"
+priority 2
+when 
+(true)
+then
+removeField "650" if (exists "650.{*,7}.a.Fugitive slaves*")
+end
+
+rule "Add note"
+priority 1
+when
+(true)
+then
+addField "949.a.nula" 
+addSubField "949.e.jdc" if (exists "949.a.nula")
+addSubField "949.c.20210803" if (exists "949.a.nula")
 end
