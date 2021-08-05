@@ -31,4 +31,5 @@ Northwestern uses Alma/Primo.
 | Legal status of slaves in free states | Legal status of enslaved persons in free states | A4BLiP, CHM |
 | Older slaves | Enslaved elderly | A4BLiP, CHM |
 | Slaves' writings, American | Enslaved persons' writings, American | A4BLiP, CHM |
+| Slaves' writings, English | Enslaved persons' writings, English | A4BLiP |
 | Women slaves | Enslaved women | A4BLiP, CHM |
