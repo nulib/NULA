@@ -1,0 +1,48 @@
+rule "Add LCSH to local tags"
+priority 4
+when 
+(exists "650.a.Slave narratives*")
+then 
+addSubField "650.2.lcsh" if (exists "650.{*,0}.a.Slave narratives*")
+copyField "650" to "947" if (exists "650.{*,0}.a.Slave narratives*")
+removeSubField "650.2" if (exists "650.{*,0}")
+
+end
+
+rule "Flip from LCSH to NULA"
+priority 3
+when
+(true)
+then
+
+addSubField "650.x.Personal narratives" if (exists "650.{*,0}.a.Slave narratives\\\\.")
+addSubField "650.x.Personal narratives" if (exists "650.{*,0}.a.Slave narratives")
+
+replaceContents "650.a.Slave narratives\\\\." with "Enslaved persons" if(exists "650.{*,0}.a.Slave narratives\\\\.")
+replaceContents "650.a.Slave narratives" with "Enslaved persons" if (exists "650.{*,0}.a.Slave narratives")
+
+changeSecondIndicator "650" to "7" if (exists "650.x.Personal narratives\\\\.")
+changeSecondIndicator "650" to "7" if (exists "650.x.Personal narratives")
+
+addSubField "650.2.local"  if  (exists "650.x.Personal narratives\\\\.")
+addSubField "650.2.local"  if  (exists "650.x.Personal narratives")
+
+end
+
+rule "Delete FAST headings"
+priority 2
+when 
+(true)
+then
+removeField "650" if (exists "650.{*,7}.a.Slave narratives*")
+end
+
+rule "Add note"
+priority 1
+when
+(not exists "949.a.nula")
+then
+addField "949.a.nula" 
+addSubField "949.e.jdc" if (exists "949.a.nula")
+addSubField "949.c.20210809" if (exists "949.a.nula")
+end
