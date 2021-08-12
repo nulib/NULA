@@ -1,0 +1,52 @@
+rule "Add LCSH to local tags"
+priority 5
+when 
+(exists "650.a.Slaveholders*")
+then 
+addSubField "650.2.lcsh" if (exists "650.{*,0}.a.Slaveholders*")
+copyField "650" to "947" if (exists "650.{*,0}.a.Slaveholders*")
+removeSubField "650.2" if (exists "650.{*,0}")
+
+end
+
+rule "Flip from LCSH to NULA"
+priority 4
+when
+(true)
+then
+replaceContents "650.a.Slaveholders\\\\." with "Enslavers." if(exists "650.{*,0}.a.Slaveholders\\\\.")
+replaceContents "650.a.Slaveholders" with "Enslavers" if(exists "650.{*,0}.a.Slaveholders")
+changeSecondIndicator "650" to "7" if (exists "650.a.Enslavers\\\\.")
+changeSecondIndicator "650" to "7" if (exists "650.a.Enslavers")
+
+addSubField "650.2.local"  if (exists "650.{*,7}.a.Enslavers\\\\.")
+addSubField "650.2.local"  if (exists "650.{*,7}.a.Enslavers")
+
+end
+
+rule "Delete FAST headings"
+priority 3
+when 
+(true)
+then
+removeField "650" if (exists "650.{*,7}.a.Slaveholders*")
+end
+
+rule "Add note"
+priority 2
+when
+(not exists "949.a.nula")
+then
+addField "949.a.nula" 
+addSubField "949.e.jdc" if (exists "949.a.nula")
+addSubField "949.c.20210811" if (exists "949.a.nula")
+end
+
+rule "Remove duplicates" 
+priority 1 
+when 
+(TRUE) 
+then 
+correctDuplicateSubfields "650" "2" 
+end
+

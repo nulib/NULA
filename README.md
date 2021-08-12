@@ -23,6 +23,7 @@ Northwestern uses Alma/Primo.
 ## List of Headings
 | LCSH | NULA | Source
 | ----------- | ----------- | ---------- |
+| African American slaveholders | African American enslavers | A4BLiP |
 | Child slaves | Enslaved children | A4BLiP, CHM |
 | Christian slaves | Enslaved Christians | A4BLiP |
 | Fugitive slave communities | Communities of fugitive enslaved persons | A4BLiP |
@@ -31,10 +32,12 @@ Northwestern uses Alma/Primo.
 | Legal status of slaves in free states | Legal status of enslaved persons in free states | A4BLiP, CHM |
 | Older slaves | Enslaved elderly | A4BLiP, CHM |
 | Slave narratives | Enslaved persons -- Personal narratives | A4BLiP |
+| Slaveholders | Enslavers | A4BLiP |
 | Slaves | Enslaved persons | A4BLiP, CHM |
 | Slaves' writings | Enslaved persons' writings | A4BLiP, CHM |
 | Slaves' writings, African | Enslaved persons' writings, African | A4BLiP, CHM |
 | Slaves' writings, American | Enslaved persons' writings, American | A4BLiP, CHM |
 | Slaves' writings, Cuban | Enslaved persons' writings, Cuban | A4BLiP |
 | Slaves' writings, English | Enslaved persons' writings, English | A4BLiP |
+| Women slaveholders | Women enslavers | A4BLiP |
 | Women slaves | Enslaved women | A4BLiP, CHM |
