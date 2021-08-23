@@ -1,0 +1,58 @@
+rule "Add LCSH to local tags"
+priority 6
+when 
+(exists "650.a.Indian slaves*")
+then 
+addSubField "650.2.lcsh" if (exists "650.{*,0}.a.Indian slaves*")
+copyField "650" to "947" if (exists "650.{*,0}.a.Indian slaves*")
+removeSubField "650.2" if (exists "650.{*,0}")
+
+end
+
+rule "Flip from LCSH to NULA"
+priority 5
+when
+(true)
+then
+replaceContents "650.a.Indian slaves\\\\." with "Enslaved native persons." if(exists "650.{*,0}.a.Indian slaves\\\\.")
+replaceContents "650.a.Indian slaves" with "Enslaved native persons" if(exists "650.{*,0}.a.Indian slaves")
+changeSecondIndicator "650" to "7" if (exists "650.a.Enslaved native persons\\\\.")
+changeSecondIndicator "650" to "7" if (exists "650.a.Enslaved native persons")
+
+addSubField "650.2.local"  if (exists "650.{*,7}.a.Enslaved native persons\\\\.")
+addSubField "650.2.local"  if (exists "650.{*,7}.a.Enslaved native persons")
+
+copyField "650" to "925" if (exists "650.{*,7}.2.local")
+
+replaceContents "925.a.Enslaved native persons\\\\." with "Enslaved indigenous persons." if(exists "925.a.Enslaved native persons\\\\.")
+
+replaceContents "925.a.Enslaved native persons" with "Enslaved indigenous persons" if(exists "925.a.Enslaved native persons")
+
+changeField "925" to "650"
+end
+
+rule "Delete FAST headings"
+priority 4
+when 
+(true)
+then
+removeField "650" if (exists "650.{*,7}.a.Indian slaves*")
+end
+
+rule "Add note"
+priority 3
+when
+(not exists "949.a.nula")
+then
+addField "949.a.nula" 
+addSubField "949.e.jdc" if (exists "949.a.nula")
+addSubField "949.c.20210819" if (exists "949.a.nula")
+end
+
+rule "Remove duplicates" 
+priority 2 
+when 
+(TRUE) 
+then 
+correctDuplicateSubfields "650" "2" 
+end

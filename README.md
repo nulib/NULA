@@ -29,6 +29,7 @@ Northwestern uses Alma/Primo.
 | Fugitive slave communities | Communities of fugitive enslaved persons | A4BLiP |
 | Fugitive slaves | Fugitive enslaved persons | A4BLiP, CHM |
 | Fugitive slaves in literature | Fugitive enslaved persons in literature | A4BLiP, CHM |
+| Indian slaves | Enslaved native persons, Enslaved Indigenous Persons* | A4BLiP, CHM |
 | Legal status of slaves in free states | Legal status of enslaved persons in free states | A4BLiP, CHM |
 | Older slaves | Enslaved elderly | A4BLiP, CHM |
 | Slave narratives | Enslaved persons -- Personal narratives | A4BLiP |
@@ -41,3 +42,5 @@ Northwestern uses Alma/Primo.
 | Slaves' writings, English | Enslaved persons' writings, English | A4BLiP |
 | Women slaveholders | Women enslavers | A4BLiP |
 | Women slaves | Enslaved women | A4BLiP, CHM |
+
+*Single heading split into two headings
