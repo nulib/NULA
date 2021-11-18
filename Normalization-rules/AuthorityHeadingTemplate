@@ -5,7 +5,7 @@ when
 then 
 addSubField "150.w.nne" if (exists "150.{*,*}")
 copyField "150" to "450" if (exists "150.{*,*}")
-addField "667.a.Main entry changed to a local heading in 2021 from OldHeading to NewHeading by Name according to Archives for Black Lives in Philadelphia--Anti-Racist Description Resources guidance and the Chicago History Museum. Original term added as former heading."
+addField "667.a.Main entry changed to a local heading in 2021 from OldHeading to NewHeading by Name according to Association for Manitoba Archives by the AMA MAIN-LCSH Working Group."
 end
 
 rule "remove subfield w from 150"

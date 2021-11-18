@@ -4,7 +4,7 @@ when
 (exists "650.a.Women slaves*")
 then 
 addSubField "650.2.lcsh" if (exists "650.{*,0}.a.Women slaves*")
-copyField "650" to "950" if (exists "650.{*,0}.a.Women slaves*")
+copyField "650" to "947" if (exists "650.{*,0}.a.Women slaves*")
 removeSubField "650.2" if (exists "650.{*,0}")
 
 end

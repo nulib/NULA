@@ -39,5 +39,5 @@ when
 then
 addField "949.a.nula" 
 addSubField "949.e.jdc" if (exists "949.a.nula")
-addSubField "949.c.20210804" if (exists "949.a.nula")
+addSubField "949.c.20211006" if (exists "949.a.nula")
 end
