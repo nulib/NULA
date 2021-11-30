@@ -18,12 +18,14 @@ Northwestern uses Alma/Primo.
 | ------ | ----- | ------ |
 | Archives For Black Lives in Philadelphia | A4BLiP | https://archivesforblacklives.wordpress.com/resources/
 | Chicago History Museum | CHM | https://libguides.chicagohistory.org/blog/LCSH-to-Local-Headings-Map
+| Homosaurus | Homosaurus | https://homosaurus.org/
 | Peoples of the Historical Slave Trade | | https://docs.enslaved.org/controlledVocabulary/ | 
 
  
 ## List of Headings
 | LCSH | NULA | Source
 | ----------- | ----------- | ---------- |
+| African American sexual minorities | African-Americans (LGBTQ) | Homosaurus
 | African American slaveholders | African American enslavers | A4BLiP |
 | Child slaves | Enslaved children | A4BLiP, CHM |
 | Christian slaves | Enslaved Christians | A4BLiP |
