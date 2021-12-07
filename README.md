@@ -27,14 +27,25 @@ Northwestern uses Alma/Primo.
 | ----------- | ----------- | ---------- |
 | African American sexual minorities | African-Americans (LGBTQ) | Homosaurus
 | African American slaveholders | African American enslavers | A4BLiP |
+|Arab American sexual minorities | Arab Americans (LGBTQ) | modeled on Homosaurus
+| Asian American sexual minorities | Asian Americans (LGBTQ) | Homosaurus
 | Child slaves | Enslaved children | A4BLiP, CHM |
+| Children of sexual minority parents | Children of LGBTQ people | Homosaurus
+| Christian sexual minorities | Christians (LGBTQ) | Homosaurus
 | Christian slaves | Enslaved Christians | A4BLiP |
 | Fugitive slave communities | Communities of fugitive enslaved persons | A4BLiP |
 | Fugitive slaves | Fugitive enslaved persons | A4BLiP, CHM |
 | Fugitive slaves in literature | Fugitive enslaved persons in literature | A4BLiP, CHM |
+| Hispanic American sexual minorities | Hispanic American (LGBTQ) | modeled on Homosaurus
+| Indian sexual minorities | Native Americans (LGBTQ) | Homosaurus
 | Indian slaves | Enslaved native persons, Enslaved indigenous Persons* | A4BLiP, CHM |
 | Legal status of slaves in free states | Legal status of enslaved persons in free states | A4BLiP, CHM |
+| Libraries and sexual minorities | Libraries and LGBTQ people | modeled on Homosaurus
+| Older sexual minorities | Older people (LGBTQ) | Homosaurus
 | Older slaves | Enslaved elderly | A4BLiP, CHM |
+| Parents of sexual minority youth | Parents of LGBTQ youth | modeled on Homosaurus
+| Police services for sexual minorities | Police services for LGBTQ people | modeled on Homosaurus
+| Rural sexual minorities | Rural LGBTQ people | modeled on Homosaurus
 | Slave narratives | Enslaved persons -- Personal narratives | A4BLiP |
 | Slaveholders | Enslavers | A4BLiP |
 | Slaves | Enslaved persons | A4BLiP, CHM |
