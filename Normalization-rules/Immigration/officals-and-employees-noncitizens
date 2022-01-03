@@ -1,0 +1,30 @@
+rule "Flip from LCSH to NULA"
+priority 4
+when
+(true)
+then
+replaceContents "651.x.Officials and employees, Alien\\\\." with "Officials and employees, Noncitizen." if(exists "651.x.Officials and employees, Alien\\\\.")
+replaceContents "651.x.Officials and employees, Alien" with "Officials and employees, Noncitizen" if(exists "651.x.Officials and employees, Alien")
+
+
+end
+
+rule "Delete FAST headings"
+priority 3
+when 
+(true)
+then
+removeField "650" if (exists "650.{*,7}.x.Officials and employees, Alien*")
+removeField "651" if (exists "651.{*,7}.x.Officials and employees, Alien*")
+end
+
+
+
+rule "Remove duplicates" 
+priority 1 
+when 
+(TRUE) 
+then 
+correctDuplicateSubfields "651" "2" 
+end
+

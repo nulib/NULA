@@ -1,0 +1,19 @@
+rule "Add LCSH to local tags"
+priority 7
+when 
+(exists "650.a.Aliens*")
+then 
+
+replaceContents "650.a.Aliens\\\\." with "Noncitizens." if(exists "650.a.Aliens\\\\.")
+replaceContents "650.a.Aliens" with "Noncitizens" if(exists "650.a.Aliens")
+
+end
+
+rule "Delete FAST headings"
+priority 7
+when 
+(true)
+then
+removeField "650" if (exists "650.{*,7}.a.Aliens*")
+end
+

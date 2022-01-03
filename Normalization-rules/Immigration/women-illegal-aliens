@@ -1,0 +1,41 @@
+rule "Add LCSH to local tags"
+priority 7
+when 
+(exists "650.a.Women illegal aliens*")
+then 
+
+replaceContents "650.a.Women illegal aliens\\\\." with "Illegal immigration." if(exists "650.a.Women illegal aliens\\\\.")
+replaceContents "650.a.Women illegal aliens" with "Illegal immigration" if(exists "650.a.Women illegal aliens")
+end
+
+
+
+rule "Copy t"
+priority 7
+when 
+(exists "650.a.Women illegal aliens*")
+then 
+
+copyField "650" to "940" if (exists "650.{*,0}.a.Women illegal aliens*")
+
+end
+
+
+rule "Change to 650"
+priority 5
+when 
+(true)
+then
+
+replaceContents "940.a.Women illegal aliens\\\\." with "Women noncitizens." if(exists "940.a.Women illegal aliens\\\\.")
+replaceContents "940.a.Women illegal aliens" with "Women noncitizens" if(exists "940.a.Women illegal aliens")
+
+end
+
+rule "Change tag"
+priority 4
+when 
+(true)
+then
+changeField "940" to "650"
+end

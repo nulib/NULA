@@ -1,0 +1,13 @@
+rule "Delete FAST headings"
+priority 7
+when 
+(true)
+then
+removeField "650" if (exists "650.{*,7}.a.*aliens*")
+removeField "650" if (exists "650.{*,7}.a.Aliens*")
+replaceContents "653.a.Aliens*" with "Noncitizens" if(exists "653.a.Aliens*")
+replaceContents "653.a.*aliens*" with "Noncitizens" if(exists "653.a.*aliens*")
+replaceContents "650.a.Aliens\\\\." with "Noncitizens." if(exists "650.a.Aliens\\\\.")
+replaceContents "650.a.Aliens" with "Noncitizens" if(exists "650.a.Aliens")
+end
+
