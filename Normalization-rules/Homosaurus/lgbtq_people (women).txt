@@ -2,10 +2,10 @@
 rule "Add LCSH to local tags"
 priority 7
 when 
-(exists "650.a.Sexual minorities*")
+(exists "650.a.Sexual minority women*")
 then 
 
-copyField "650" to "940" if (exists "650.{*,0}.a.Sexual minorities*")
+copyField "650" to "940" if (exists "650.{*,0}.a.Sexual minority women*")
 
 end
 
@@ -15,8 +15,8 @@ priority 6
 when 
 (true)
 then 
-changeSecondIndicator "940" to "7" if (exists "940.{*,0}.a.Sexual minorities*")
-changeSecondIndicator "940" to "7" if (exists "940.{*,0}.a.Sexual minorities*")
+changeSecondIndicator "940" to "7" if (exists "940.{*,0}.a.Sexual minority women*")
+changeSecondIndicator "940" to "7" if (exists "940.{*,0}.a.Sexual minority women*")
 end
 
 
@@ -26,8 +26,8 @@ when
 (true)
 then
 
-replaceContents "940.a.Sexual minorities\\\\." with "LGBTQ people." if(exists "940.a.Sexual minorities\\\\.")
-replaceContents "940.a.Sexual minorities" with "LGBTQ people" if(exists "940.a.Sexual minorities")
+replaceContents "940.a.Sexual minority women\\\\." with "LGBTQ people." if(exists "940.a.Sexual minority women\\\\.")
+replaceContents "940.a.Sexual minority women" with "LGBTQ people" if(exists "940.a.Sexual minority women")
 
 end
 
@@ -54,7 +54,7 @@ when
 then
 addField "949.a.nula" 
 addSubField "949.e.jdc" if (exists "949.a.nula")
-addSubField "949.c.20220131" if (exists "949.a.nula")
+addSubField "949.c.20220613" if (exists "949.a.nula")
 end
 
 rule "Remove duplicates" 

@@ -1,0 +1,67 @@
+
+rule "Add LCSH to local tags"
+priority 7
+when 
+(exists "650.a.Sexual minorities' writings, Brazilian*")
+then 
+
+copyField "650" to "940" if (exists "650.{*,0}.a.Sexual minorities' writings, Brazilian*")
+
+end
+
+
+rule "Change second indicator"
+priority 6
+when 
+(true)
+then 
+changeSecondIndicator "940" to "7" if (exists "940.{*,0}.a.Sexual minorities' writings, Brazilian*")
+changeSecondIndicator "940" to "7" if (exists "940.{*,0}.a.Sexual minorities' writings, Brazilian*")
+end
+
+
+rule "Change to homoit"
+priority 5
+when 
+(true)
+then
+
+replaceContents "940.a.Sexual minorities' writings, Brazilian\\\\." with "LGBTQ people's writings, Brazilian." if(exists "940.a.Sexual minorities' writings, Brazilian\\\\.")
+replaceContents "940.a.Sexual minorities' writings, Brazilian" with "LGBTQ people's writings, Brazilian" if(exists "940.a.Sexual minorities' writings, Brazilian")
+
+end
+
+rule "Change tag"
+priority 4
+when 
+(true)
+then
+changeField "940" to "650"
+end
+
+rule "add subfield 2"
+priority 3
+when
+(true)
+then
+addSubField "650.2.homoit"  if (exists "650.a.LGBTQ people's writings, Brazilian*")
+end
+
+rule "Add note"
+priority 2
+when
+(not exists "949.a.nula")
+then
+addField "949.a.nula" 
+addSubField "949.e.jdc" if (exists "949.a.nula")
+addSubField "949.c.20220622" if (exists "949.a.nula")
+end
+
+rule "Remove duplicates" 
+priority 1 
+when 
+(TRUE) 
+then 
+correctDuplicateSubfields "650" "2" 
+end
+

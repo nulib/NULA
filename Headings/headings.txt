@@ -31,7 +31,9 @@ Sexual minorities in motion pictures,LGBTQ people in motion pictures,Modeled on 
 Sexual minorities on television,LGBTQ people on television,Modeled on Homosaurus 
 Sexual minorities with disabilities,LGBTQ people with disabilities,Modeled on Homosaurus 
 Sexual minorities' writings,LGBTQ people's writings,Modeled on Homosaurus 
-Sexual minorities' writings, American,LGBTQ people's writings, American,Modeled on Homosaurus 
+Sexual minorities' writings, American,LGBTQ people's writings, American,Modeled on Homosaurus
+Sexual minorities' writings, Brazilian,LGBTQ people's writings, Brazilian,Modeled on Homosaurus 
+Sexual minorities' writings, Canadian,LGBTQ people's writings, Canadian,Modeled on Homosaurus 
 Sexual minority business enterprises,Business enterprises (LGBTQ),Modeled on Homosaurus 
 Sexual minority college students,College students (LGBTQ),Modeled on Homosaurus 
 Sexual minority community,Communities (LGBTQ),Homosaurus
