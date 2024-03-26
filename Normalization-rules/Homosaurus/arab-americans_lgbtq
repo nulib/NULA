@@ -44,7 +44,7 @@ priority 3
 when
 (true)
 then
-addSubField "650.2.homoit"  if (exists "650.a.Arab Americans (LGBTQ)*")
+addSubField "650.2.nula"  if (exists "650.a.Arab Americans (LGBTQ)*")
 end
 
 rule "Add note"

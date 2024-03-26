@@ -26,8 +26,8 @@ when
 (true)
 then
 
-replaceContents "940.a.Sexual minorities in motion pictures\\\\." with "LGBTQ people in motion pictures." if(exists "940.a.Sexual minorities in motion pictures\\\\.")
-replaceContents "940.a.Sexual minorities in motion pictures" with "LGBTQ people in motion pictures" if(exists "940.a.Sexual minorities in motion pictures")
+replaceContents "940.a.Sexual minorities in motion pictures\\\\." with "LGBTQ+ people in motion pictures." if(exists "940.a.Sexual minorities in motion pictures\\\\.")
+replaceContents "940.a.Sexual minorities in motion pictures" with "LGBTQ+ people in motion pictures" if(exists "940.a.Sexual minorities in motion pictures")
 
 end
 
@@ -44,7 +44,7 @@ priority 3
 when
 (true)
 then
-addSubField "650.2.homoit"  if (exists "650.a.LGBTQ people in motion pictures*")
+addSubField "650.2.nula"  if (exists "650.a.LGBTQ people in motion pictures*")
 end
 
 rule "Add note"

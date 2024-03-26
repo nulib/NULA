@@ -54,7 +54,7 @@ when
 then
 addField "949.a.nula" 
 addSubField "949.e.jdc" if (exists "949.a.nula")
-addSubField "949.c.20211206" if (exists "949.a.nula")
+addSubField "949.c.20220801" if (exists "949.a.nula")
 end
 
 rule "Remove duplicates" 
