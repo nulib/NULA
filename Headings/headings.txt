@@ -35,6 +35,7 @@ Sexual minorities -- United States,LGBTQ+ people -- United States, Homosaurus
 Sexual minorities' families,LGBTQ+ families,Homosaurus
 Sexual minorities in advertising,LGBTQ+ people in advertising,Modeled on Homosaurus
 Sexual minorities in art,LGBTQ+ people in art,Modeled on Homosaurus
+Sexual minorities in comics,LGBTQ+ people in comics,Modeled on Homosaurus
 Sexual minorities in education,LGBTQ+ people in education,Modeled on Homosaurus
 Sexual minorities in higher education,LGBTQ+ people in higher education,Modeled on Homosaurus
 Sexual minorities in literature,LGBTQ+ people in literature,Modeled on Homosaurus 
