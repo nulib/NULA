@@ -5,7 +5,7 @@ when
 then 
 addSubField "150.w.nne" if (exists "150.{*,*}")
 copyField "150" to "450" if (exists "150.{*,*}")
-addField "667.a.Main entry changed to a local heading in 2021 from OldHeading to NewHeading by Name according to Association for Manitoba Archives by the AMA MAIN-LCSH Working Group."
+addField "667.a.Main entry changed to a local heading in 2021 from OldHeading to NewHeading by Name following Homosaurus pattern."
 end
 
 rule "remove subfield w from 150"
@@ -15,7 +15,7 @@ when
 then
 removeSubField "150.w"
 changeSecondIndicator "150" to "7" if (exists "150")
-addSubField "150.2.local" if (exists "150.{*,*}")
+addSubField "150.2.nula" if (exists "150.{*,*}")
 end
 
 rule "Change 008 position 11 to other"

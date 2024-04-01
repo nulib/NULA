@@ -26,8 +26,8 @@ when
 (true)
 then
 
-replaceContents "940.a.Sexual minorities in literature\\\\." with "LGBTQ people in literature." if(exists "940.a.Sexual minorities in literature\\\\.")
-replaceContents "940.a.Sexual minorities in literature" with "LGBTQ people in literature" if(exists "940.a.Sexual minorities in literature")
+replaceContents "940.a.Sexual minorities in literature\\\\." with "LGBTQ+ people in literature." if(exists "940.a.Sexual minorities in literature\\\\.")
+replaceContents "940.a.Sexual minorities in literature" with "LGBTQ+ people in literature" if(exists "940.a.Sexual minorities in literature")
 
 end
 
@@ -44,7 +44,7 @@ priority 3
 when
 (true)
 then
-addSubField "650.2.homoit"  if (exists "650.a.LGBTQ people in literature*")
+addSubField "650.2.nula"  if (exists "650.a.LGBTQ+ people in literature*")
 end
 
 rule "Add note"

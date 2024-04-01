@@ -1,10 +1,12 @@
 # Northwestern University Local Authorities (NULA)
 
-This is an ongoing list of the local authorities in the Northwestern University catalog and how they are mapped to LCSH.
+This is an ongoing list of the local authorities in the Northwestern University catalog and how they are mapped to LCSH. With the LCSH updates about slavery, it was no longer necessary to make local changes to those headings. The list of the former NULA headings is retained in the file \NULA\Headings\former-local.txt
 
-This list owes a considerable amount to the work done to map LCSH headings at the Chicago History Museum: https://libguides.chicagohistory.org/blog/LCSH-to-Local-Headings-Map and the resources listed below. 
+Currently, the list maps LCSH terms using "Sexual minorities" or "Sexual minority" to Homosaurus, or terms based on Homosaurus. Not all LCSH terms map exactly to Homosaurus. For example, there is no direct mapping between the LCSH "African American sexual minority students" and Homosaurus. 
 
-Questions are welcome and can be sent to jamie.carlstone@northwestern.edu
+This work was redone in 2024 after ExLibris added Homosaurus records to the Alma authority file. Local authority records that mapped exactly to Homosaurus terms were deleted because they were no longer needed. The NULA headings that are based on Homosaurus remain. There are forty-six local headings. 
+
+This work is tracked using Alma Analytics reports. Questions are welcome and can be sent to jamie.carlstone@northwestern.edu
 
 ## Instructions
 Northwestern uses Alma/Primo. 
@@ -14,6 +16,8 @@ Northwestern uses Alma/Primo.
 4. Build a set of all bibliographic records that use the LCSH heading. Run the normalization rule on this set. Normalization rules are included in this repository. There is a normalization rule generator available at https://github.com/jdcar/generate-normalization-rule. 
  
 ## List of Resources
+This list owes a considerable amount to the work done to map LCSH headings at the Chicago History Museum: https://libguides.chicagohistory.org/blog/LCSH-to-Local-Headings-Map and the resources listed below. 
+
 | Resource Name | Abbreviation | Link |
 | ------ | ----- | ------ |
 | Archives For Black Lives in Philadelphia | A4BLiP | https://archivesforblacklives.wordpress.com/resources/
@@ -24,4 +28,3 @@ Northwestern uses Alma/Primo.
  
 ## List of Headings
 The list of headings was moved into the folder \NULA\Headings
-With the LCSH updates about slavery, it was no longer necessary to make local changes to those headings. The list of the former NULA headings is retained in the file \NULA\Headings\former-local.txt

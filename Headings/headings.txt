@@ -11,7 +11,7 @@ Asian American sexual minority students, Asian American LGBTQ+ students,Modeled 
 Catholic sexual minorities,LGBTQ+ Roman Catholics,Homosaurus
 Children of sexual minority parents,Children of LGBTQ+ people,Homosaurus
 Christian sexual minorities,LGBTQ+ Christians,Homosaurus
-Church work with sexual minority people,Church work with LGBTQ+ people,Modeled on Homosaurus
+Church work with sexual minorities,Church work with LGBTQ+ people,Modeled on Homosaurus
 Church work with sexual minority youth,Church work with LGBTQ+ youth,Modeled on Homosaurus
 Hispanic American sexual minorities,Hispanic American LGBTQ+ people,Modeled on Homosaurus
 Hispanic American sexual minority students,Hispanic American LGBTQ+ students,Modeled on Homosaurus
@@ -73,7 +73,7 @@ Sexual minority women,LGBTQ+ women,Modeled on Homosaurus
 Sexual minority veterans,LGBTQ+ veterans, Homosaurus
 Sexual minority youth,LGBTQ+ youth,Homosaurus
 Sexual minority youth in mass media,LGBTQ+ youth in mass media,Modeled on Homosaurus
-Sexual minority youth with disabilities,LGBTQ+ youth with physical disabilities,Modeled on Homosaurus
+Sexual minority youth with disabilities,LGBTQ+ disabled youth,Modeled on Homosaurus
 Social work with older sexual minorities,Social work with older LGBTQ+ people,Modeled on Homosaurus
 Social work with sexual minorities,Social work with LGBTQ+ people,Modeled on Homosaurus
 Social work with sexual minority youth,Social work with LGBTQ+ youth,Modeled on Homosaurus

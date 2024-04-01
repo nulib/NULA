@@ -26,8 +26,8 @@ when
 (true)
 then
 
-replaceContents "940.a.Sexual minorities in higher education\\\\." with "LGBTQ people in higher education." if(exists "940.a.Sexual minorities in higher education\\\\.")
-replaceContents "940.a.Sexual minorities in higher education" with "LGBTQ people in higher education" if(exists "940.a.Sexual minorities in higher education")
+replaceContents "940.a.Sexual minorities in higher education\\\\." with "LGBTQ+ people in higher education." if(exists "940.a.Sexual minorities in higher education\\\\.")
+replaceContents "940.a.Sexual minorities in higher education" with "LGBTQ+ people in higher education" if(exists "940.a.Sexual minorities in higher education")
 
 end
 
@@ -44,7 +44,7 @@ priority 3
 when
 (true)
 then
-addSubField "650.2.homoit"  if (exists "650.a.LGBTQ people in higher education*")
+addSubField "650.2.nula"  if (exists "650.a.LGBTQ+ people in higher education*")
 end
 
 rule "Add note"
@@ -54,7 +54,7 @@ when
 then
 addField "949.a.nula" 
 addSubField "949.e.jdc" if (exists "949.a.nula")
-addSubField "949.c.20220104" if (exists "949.a.nula")
+addSubField "949.c.20240328" if (exists "949.a.nula")
 end
 
 rule "Remove duplicates" 
