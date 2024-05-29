@@ -29,6 +29,7 @@ Pacific Islander American sexual minority youth,Pacific Islander American LGBTQ+
 Parents of sexual minority youth,Parents of LGBTQ+ youth,Modeled on Homosaurus
 Police services for sexual minorities,Police services for LGBTQ+ people,Modeled on Homosaurus
 Rural sexual minorities,Rural LGBTQ+ people,Modeled on Homosaurus
+Sexual minorities, Black,Black LGBTQ+ people,Homosaurus
 Sexual minorities,LGBTQ+ people,Homosaurus
 Sexual minorities (Islamic law),LGBTQ+ people (Islamic law),Modeled on Homosaurus
 Sexual minorities -- United States,LGBTQ+ people -- United States, Homosaurus
@@ -79,3 +80,5 @@ Social work with sexual minorities,Social work with LGBTQ+ people,Modeled on Hom
 Social work with sexual minority youth,Social work with LGBTQ+ youth,Modeled on Homosaurus
 Unitarian Universalist sexual minorities,LGBTQ+ Unitarians,Modeled on Homosaurus
 Web sites for sexual minorities,LGBTQ+ websites,Homosaurus
+Palestinian Arabs,Palestinians,Local
+

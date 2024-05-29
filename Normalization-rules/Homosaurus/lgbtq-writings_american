@@ -26,8 +26,8 @@ when
 (true)
 then
 
-replaceContents "940.a.Sexual minorities' writings, American\\\\." with "LGBTQ people's writings, American." if(exists "940.a.Sexual minorities' writings, American\\\\.")
-replaceContents "940.a.Sexual minorities' writings, American" with "LGBTQ people's writings, American" if(exists "940.a.Sexual minorities' writings, American")
+replaceContents "940.a.Sexual minorities' writings, American\\\\." with "LGBTQ+ people's writings, American." if(exists "940.a.Sexual minorities' writings, American\\\\.")
+replaceContents "940.a.Sexual minorities' writings, American" with "LGBTQ+ people's writings, American" if(exists "940.a.Sexual minorities' writings, American")
 
 end
 
@@ -44,7 +44,7 @@ priority 3
 when
 (true)
 then
-addSubField "650.2.homoit"  if (exists "650.a.LGBTQ people's writings, American*")
+addSubField "650.2.homoit"  if (exists "650.a.LGBTQ+ people's writings, American*")
 end
 
 rule "Add note"
@@ -54,7 +54,7 @@ when
 then
 addField "949.a.nula" 
 addSubField "949.e.jdc" if (exists "949.a.nula")
-addSubField "949.c.20220706" if (exists "949.a.nula")
+addSubField "949.c.20240523" if (exists "949.a.nula")
 end
 
 rule "Remove duplicates" 
